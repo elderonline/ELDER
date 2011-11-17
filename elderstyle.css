@@ -1,0 +1,164 @@
+﻿.NavMenu{
+background-color:#AAEEEE;
+float:left;
+width:20%;
+height:200%;
+border:2px solid black;
+}
+.Logo{
+background-color:#AAEEEE;
+float:left;
+display:inline;
+width:20%;
+height:60px;
+}
+.PageTop{
+background-color:#AAEEEE;
+float:left;
+clear:right;
+display:inline;
+width:79%;
+height:60px;
+}
+.AppAcronym{
+display:inline;
+}
+.Content{
+float:left;
+width:79%;
+border-top:2px solid black;
+}
+.IPALabel, .CEPOMOrthographyLabel, .GlossLabel, .AdditionalNotesLabel, .ToDoLabel, .UnderlyingToneLabel, .HeadwordLabel, .EnteredByLabel, .SpokenByLabel, .SessionLabel, .GrammaticalCategoryLabel, .MorphologicalCategoryLabel, .SemanticFieldsLabel, .AudioFilesLabel{
+font-weight:bold;
+}
+.ReadListenEdit{
+margin-left:2%;
+}
+	.WordWrittenFormLabel{
+	font-size:22px;
+	float:left;
+	}
+	.AudioFiles{
+	margin-left: 25%;
+	background-color:#AAEEEE;
+	border:1px solid grey;
+	}
+	.EditWord{
+	float:right;
+	margin-right:2%;
+	clear:right;
+	background-color:#AAEEEE;
+	border:1px solid grey;
+	}
+	.Gloss{
+	font-size:18px;
+	font-style:italic;
+	}
+.Transcriptions{
+margin-left:5%;
+}
+.Lists{
+}
+
+.RelatedPhraseList{
+border:1px solid grey;
+margin-left:2%;
+margin-right:10%;
+display:inline-table;
+padding:10px;
+}
+	.PhrasesContainingThisWordLabel{
+	text-decoration:underline;
+	}
+.SeeAlsoList{
+border:1px solid grey;
+margin-left:10%;
+margin-right:10%;
+display:inline-table;
+padding:10px;
+}
+	.SeeAlsoLabel{
+	text-decoration:underline;
+	}
+.GrammarAndSemantics{
+border:1px solid grey;
+margin-left:2%;
+margin-right:2%;
+width:85%;
+display:table;
+padding:20px;
+}
+	.SemanticFieldManagementLink, .MorphologicalCategoryLabel, .GrammaticalCategoryLabel, .HeadwordLabel, .GrammaticalCategory, .Headword{
+	display:table-cell;
+	}
+	.SemanticFields, .MorphologicalCategory{
+	margin-right:5%;
+	}
+	.SemanticFieldManagementLink, .MorphologicalCategoryLabel{
+	margin-left:10%;
+	}
+	.GrammarAndSemanticsLabel{
+	text-decoration:underline;
+	}
+.PhoneticsAndPhonology{
+width:50%;
+border:1px solid grey;
+margin-left: 2%;
+padding:20px;
+}
+	.PhoneticsAndPhonologyLabel{
+	text-decoration:underline;
+	}
+.NotesAndMetadata{
+border:1px solid grey;
+margin-left:2%;
+margin-right:2%;
+width:85%;
+padding:20px;
+}
+	.NotesAndMetadataLabel{
+	text-decoration:underline;
+	}
+.DeleteWord{
+margin-left:2%;
+background-color:#AAEEEE;
+border:1px solid grey;
+}
+.Row{
+display:table-row;
+}
+/*****************VIEWSENTENCE****************/
+.FreeTranslation{
+	font-size:18px;
+	font-style:italic;
+}
+	.EditSentence{
+	float:right;
+	margin-right:2%;
+	clear:right;
+	background-color:#AAEEEE;
+	border:1px solid grey;
+	}
+.SurfaceForm{
+width:70%;
+border:1px solid grey;
+margin-left: 2%;
+padding:20px;
+}
+	.SurfaceFormLabel{
+	text-decoration:underline;
+	}
+.UnderlyingForm{
+width:70%;
+border:1px solid grey;
+margin-left: 2%;
+padding:20px;
+}
+	.UnderlyingFormLabel{
+	text-decoration:underline;
+	}
+.DeleteSentence{
+margin-left: 2%;
+background-color:#AAEEEE;
+border:1px solid grey;
+}
