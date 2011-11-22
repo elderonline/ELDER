@@ -1,13 +1,6 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
 <?php require_once ('titletop.php');
 require_once ('navheaderside.php'); ?>
 <div class="Content">
-<head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="Content-Type">
-  <title>faq</title>
-</head>
 <span style="font-weight: bold;"><span style="font-weight: bold;"><span
  style="font-weight: bold;">FAQ:<br>
 <a href="#whomade">Who made this?</a><br>

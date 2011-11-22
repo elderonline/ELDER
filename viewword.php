@@ -8,7 +8,6 @@ function viewWordValidator(){
 //Page for Viewing of Words
 require_once ('formdisplayhelperfunctions.php');
 $link = connectToDB();
-echo "<html>";
 require_once ('titletop.php');
 require_once ('navheaderside.php');
 
@@ -85,7 +84,6 @@ require_once ('navheaderside.php');
 		
 		echo tagForCSS("<a href=\"".$GLOBALS['baseurl']."/removeword.php?wordID=".$_GET['wordID']."\">Delete This Word (PERMANENT)</a>", "DeleteWord")."\n";
 	echo "</div>";
-echo "</html>";
 // Free resultset
 	mysql_free_result($result);
 
