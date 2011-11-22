@@ -29,8 +29,10 @@ while($row = mysql_fetch_assoc($tableNamesResult)){
 
 //PERFORMING A PARTIAL (USABILITY-FOCUSED) DUMP IN CSV FORMAT
 $link = connectToDB();
-$wordOutFile = fopen($_SESSION['userName']."Words.csv", "w") or die("Cannot open word output file.");
-$sentenceOutFile = fopen($_SESSION['userName']."Sentences.csv", "w") or die("Cannot open sentence output file.");
+$wordOutPath = "/export/".$_SESSION['userName']."Words.csv";
+$sentenceOutPath = "/export/"$_SESSION['userName']."Sentences.csv";
+$wordOutFile = fopen($wordOutPath, "w") or die("Cannot open word output file.");
+$sentenceOutFile = fopen($sentenceOutPath, "w") or die("Cannot open sentence output file.");
 
 	$viewWordQuery = "SELECT wordWrittenForm, wordDescription, analyzedTone, etymology, lexicalCategoryDescription, morphologicalTypeDescription, notes FROM word, lexicalcategory, morphologicaltype" . 
 		" WHERE word.lexicalCategoryID = lexicalCategory.lexicalCategoryID" . 
@@ -66,11 +68,8 @@ $sentenceOutFile = fopen($_SESSION['userName']."Sentences.csv", "w") or die("Can
 		$sentenceString .= "\n";
 		fwrite($sentenceOutFile, $sentenceString);
 	}
-	print "Export complete.  Your files are <a href=\"".$_SESSION['userName']."Words.csv"."\">here (words)</a> and <a href=\"".$_SESSION['userName']."Sentences.csv"."\">here (sentences)</a>.  When importing into Microsoft Excel or equivalent program, make sure to specify Unicode format and Tab-separated values.";
+	print "Export complete.  Your files are <a href=\"".$wordOutPath."\">here (words)</a> and <a href=\"".$sentenceOutPath."\">here (sentences)</a>.  When importing into Microsoft Excel or equivalent program, make sure to specify Unicode format and Tab-separated values.";
 
 fclose($wordOutFile);
 fclose($sentenceOutFile);
 ?>
-
-
-
