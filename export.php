@@ -29,8 +29,8 @@ while($row = mysql_fetch_assoc($tableNamesResult)){
 
 //PERFORMING A PARTIAL (USABILITY-FOCUSED) DUMP IN CSV FORMAT
 $link = connectToDB();
-$wordOutPath = "/export/".$_SESSION['userName']."Words.csv";
-$sentenceOutPath = "/export/"$_SESSION['userName']."Sentences.csv";
+$wordOutPath = "export/".$_SESSION['userName']."Words.csv";
+$sentenceOutPath = "export/".$_SESSION['userName']."Sentences.csv";
 $wordOutFile = fopen($wordOutPath, "w") or die("Cannot open word output file.");
 $sentenceOutFile = fopen($sentenceOutPath, "w") or die("Cannot open sentence output file.");
 
