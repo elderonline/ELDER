@@ -45,5 +45,6 @@ echo "</div>";
 //cleanup
 // Closing connection
 mysql_close($link);
+require_once('footer.php');
 ?>
 

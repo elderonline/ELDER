@@ -109,3 +109,5 @@ $link = connectToDB();
 
 // Free resultset
 	mysql_free_result($result);
+require_once('footer.php');
+?>

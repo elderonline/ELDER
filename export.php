@@ -72,4 +72,5 @@ $sentenceOutFile = fopen($sentenceOutPath, "w") or die("Cannot open sentence out
 
 fclose($wordOutFile);
 fclose($sentenceOutFile);
+require_once('footer.php');
 ?>

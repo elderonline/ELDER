@@ -15,4 +15,5 @@ else{
 	print "You are not logged in!";
 }
 echo "</div>";
+require_once('footer.php');
 ?>

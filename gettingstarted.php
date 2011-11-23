@@ -2,8 +2,7 @@
 require_once ('navheaderside.php');
 
 echo "<div class=\"Content\">";?>
-<body style="background-color: rgb(170, 238, 238); color: rgb(0, 0, 0);"
- alink="#ee0000" link="#0000ee" vlink="#551a8b">
+<body>
 <big style="font-weight: bold;"><big>BEFORE YOU GET STARTED:</big></big><br>
 <br>
 There are a few things to keep in mind while using ELDER:<br
@@ -36,5 +35,7 @@ the next as /m&#601; j&#601;n l&#616;m ki/.</li>
 </ul>
 <br>
 </body>
-<?php echo "</div>";?>
-</html>
+</div>
+<?php
+require_once('footer.php');
+?>

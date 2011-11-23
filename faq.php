@@ -590,4 +590,6 @@ whom, in case the metadata is somehow lost.<br>
 <br>
 </body>
 </div>
-</html>
+<?php 
+require_once('footer.php');
+?>
