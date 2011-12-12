@@ -1154,6 +1154,15 @@ function isSuperUser($userName){
 	return 0;
 }
 
+function setValueInURL($url, $name, $newValue){
+	if(preg_match("/.*".$name."=.*/", $url) > 0){
+		return preg_replace("/".$name."=[^&]*(&?)/", $name."=".$newValue."$1", $url);
+	}
+	else{
+		return $url."&".$name."=".$newValue;
+	}
+}
+
 function connectToDB(){
 //$link = mysql_connect('localhost', 'AKBelew', 'connor')
 //   or die('Could not connect: ' . mysql_error());
